@@ -6,15 +6,15 @@ public class AuthorParser {
   private String author_url;
 
   protected void setAuthorName(String newName) {
-      author_name = newName;
+    author_name = newName;
   }
 
   protected void setAuthorEmail(String newEmail) {
-      author_email = newEmail;
+    author_email = newEmail;
   }
 
   protected void setAuthorUrl(String newUrl) {
-      author_url = newUrl;
+    author_url = newUrl;
   }
 
   protected String getAuthorName() {
