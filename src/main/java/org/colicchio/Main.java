@@ -7,9 +7,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.parser.Parser;
-
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 public class Main {
   public static void main(String[] args) throws IOException, CsvValidationException {
