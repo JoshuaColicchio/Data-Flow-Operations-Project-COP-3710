@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<authors>
+	<author>
+		<name>Charles Dickens</name>
+		<email>classicliterature@preserve.edu</email>
+		<url>www.classicpreservation.edu</url>
+	</author>
+	<author>
+		<name>William Gibson</name>
+		<email>WiltheoriginalGibson@gmail.com</email>
+		<url>IamCyberPunk.com</url>
+	</author>
+	<author>
+		<name>Neil Strauss</name>
+		<email>nsfiction@ace.com</email>
+		<url></url>
+	</author>
+	<author>
+		<name>Charlotte Roche</name>
+		<email></email>
+		<url>anderwebseite.gr</url>
+	</author>
+</authors>
