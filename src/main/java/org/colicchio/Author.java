@@ -1,6 +1,6 @@
 package org.colicchio;
 
-public class AuthorParser {
+public class Author {
   private String author_name;
   private String author_email;
   private String author_url;
