@@ -20,8 +20,6 @@ public class CsvParser {
    * Function that reads the provided CSV file using OpenCSV.
    *
    * @param inFile The CSV file to read from.
-   * @throws IOException
-   * @throws CsvValidationException
    */
   public CsvParser(String inFile) throws IOException, CsvValidationException {
     if (checkFile(inFile)) { // Make sure the file exists
@@ -36,6 +34,21 @@ public class CsvParser {
 
       // Close the reader when finished.
       reader.close();
+    }
+  }
+
+  protected void saveToDatabase() {
+    if (fileRows.size() == 0) { // No data loaded
+      System.out.println("No data found in the specified CSV file.");
+    } else {
+      int rowNumber = 1; // Current row being saved.
+      for (Object row : fileRows.subList(1, fileRows.size() - 1)) {
+        if (!DatabaseManager.saveCsv((String[]) row)) {
+          System.out.println(
+              String.format("Error saving CSV file to database. (Row %d)", rowNumber));
+        }
+        rowNumber++;
+      }
     }
   }
 
