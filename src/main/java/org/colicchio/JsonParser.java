@@ -15,21 +15,21 @@ public class JsonParser {
    * specified type.
    *
    * @param jsonFile The path of the JSON file to read.
-   * @param TypeOfT The type of Object to parse JSON Objects as.
+   * @param typeOfT The type of Object to parse JSON Objects as.
    * @return The list of parsed objects. Null if the file did not exist.
    */
-  public static <T> T[] readJson(String jsonFile, Type TypeOfT) throws FileNotFoundException {
+  public static <T> T[] readJson(String jsonFile, Type typeOfT) throws FileNotFoundException {
     T[] returnVal = null;
     if (checkFile(jsonFile)) {
       Gson gson = new Gson();
       JsonReader jsonReader = new JsonReader(new FileReader(jsonFile));
-      returnVal = gson.fromJson(jsonReader, TypeOfT);
+      returnVal = gson.fromJson(jsonReader, typeOfT);
     }
     return returnVal;
   }
 
   /**
-   * Checks whether or not the given file exists
+   * Checks whether or not the given file exists.
    *
    * @param jsonFile The path to the file to check.
    * @return True if it exists
