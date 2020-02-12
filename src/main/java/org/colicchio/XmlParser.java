@@ -1,13 +1,13 @@
 package org.colicchio;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.parser.Parser;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.parser.Parser;
 
 public class XmlParser {
 
@@ -27,7 +27,7 @@ public class XmlParser {
   }
 
   /**
-   * Checks whether or not the given file exists
+   * Checks whether or not the given file exists.
    *
    * @param xmlFile The path to the file to check.
    * @return True if it exists
